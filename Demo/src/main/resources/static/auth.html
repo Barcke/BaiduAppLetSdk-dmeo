@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<a id="auth">点我进行验证</a>
+<script>
+    $.post("/getUrl",{},function (url) {
+        $("#auth").attr("href",url);
+        if (url==null||url==''){
+            alert("未获取到url即将刷新页面");
+            window.location.reload();
+        }
+    })
+</script>
+</body>
+</html>

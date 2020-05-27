@@ -1,0 +1,19 @@
+baidu:
+  applet:
+    enabled: true #是否开启工具类
+    info:
+      app-key: xxxxxxxxx  #小程序key
+      app-secret: xxxxxxxxx #小程序密钥
+      app-id: xxxxxxxxx #小程序appId
+      third-part-app-key: xxxxxxxxx #第三方key
+      third-part-app-secret: xxxxxxxxx #第三方密钥
+      aes-decrypt-secret-key: xxxxxxxxx #申请第三方平台时填写到43为加密密钥
+
+server:
+  port: 80
+
+spring:
+  mvc:
+    view:
+      prefix: /
+      suffix: .html
